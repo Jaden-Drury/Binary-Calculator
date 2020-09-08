@@ -1,7 +1,5 @@
 import org.junit.Test;
 
-import java.text.MessageFormat;
-
 public class TestBinaryOperations {
 
     @Test

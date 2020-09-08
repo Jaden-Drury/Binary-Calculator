@@ -25,8 +25,8 @@ public class TestBinaryOperations {
             int result = BinaryOperations.Divide(x, y[i]);
             int xDecimal = Integer.parseInt(x+"");
             int yDecimal = Integer.parseInt(y[i]+"");
-            int product = Integer.parseInt(Integer.toBinaryString(xDecimal / yDecimal), 2);
-            assert (result == product);
+            int quotient = Integer.parseInt(Integer.toBinaryString(xDecimal / yDecimal), 2);
+            assert (result == quotient);
         }
 
         try {

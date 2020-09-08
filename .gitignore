@@ -41,7 +41,6 @@
 .idea/modules
 *.iml
 *.ipr
-.idea
 target/
 log/
 

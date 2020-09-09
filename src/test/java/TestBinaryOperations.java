@@ -8,14 +8,16 @@ public class TestBinaryOperations {
         int[] y = {0b101, 0b0};
 
         for (int i = 0; i < x.length; i++) {
-            for(int j = 0; j < y.length; j++){
+            for (int j = 0; j < y.length; j++) {
                 int result = BinaryOperations.Add(x[i], j);
-                int xDecimal = Integer.parseInt(x[i]+"");
-                int yDecimal = Integer.parseInt(j+"");
+                int xDecimal = Integer.parseInt(x[i] + "");
+                int yDecimal = Integer.parseInt(j + "");
                 int sum = Integer.parseInt(Integer.toBinaryString(xDecimal + yDecimal), 2);
-                assert(result == sum);
+                assert (result == sum);
             }
-
+        }
+    }
+    
     @Test
     public void TestBinaryMultiplication() {
         int[] x = new int[]{ 0b1000, 0b0, 0b101, 0b1101 };

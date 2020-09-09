@@ -12,13 +12,22 @@ public class BinaryOperations {
     }
 
     /// Returns the value obtained by adding b1 to b2
-    public byte Add(byte b1, byte b2) {
-        return 0;
+    public static int Add(int A, int B) {
+        int sum;
+        sum = A + B;
+
+        return sum;
     }
 
     /// Returns the value obtained by subtracting b2 from b1
-    public byte Subtract(byte b1, byte b2) {
-        return 0;
+    public static int Subtract(int A, int B) {
+//        int difference;
+//        difference = A - B;
+//        return difference;
+        int difference;
+        //2's complement
+        difference = A + (~B + 1);
+        return difference;
     }
 
     /// Returns the decimal representation of the passed in number

@@ -8,7 +8,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Binary-Calculator" />
         <module name="BinaryCalculator" />
-        <module name="Binary-Calculator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11" />

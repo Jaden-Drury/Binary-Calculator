@@ -108,28 +108,30 @@ public class Controller {
 
     @FXML
     private void handleEqual() {
-        int one = Integer.parseInt(storedInput, 2);
-        int two = Integer.parseInt(userInput, 2);
-        int result = 0;
-        switch (operation) {
-            case "+":
-                result = BinaryOperations.Add(one, two);
-                break;
-            case "/":
-                result = BinaryOperations.Divide(one, two);
-                break;
-            case "-":
-                result = BinaryOperations.Subtract(one, two);
-                break;
-            case "*":
-                result = BinaryOperations.Multiply(one, two);
-                break;
+        if(userInput != "" && storedInput != "" && operation != ""){
+            int one = Integer.parseInt(storedInput, 2);
+            int two = Integer.parseInt(userInput, 2);
+            int result = 0;
+            switch (operation) {
+                case "+":
+                    result = BinaryOperations.Add(one, two);
+                    break;
+                case "/":
+                    result = BinaryOperations.Divide(one, two);
+                    break;
+                case "-":
+                    result = BinaryOperations.Subtract(one, two);
+                    break;
+                case "*":
+                    result = BinaryOperations.Multiply(one, two);
+                    break;
+            }
+            display.setText("0b" + Integer.toBinaryString(result));
+            storedInput = "";
+            operation = "";
+            userInput = Integer.toBinaryString(result);
+            isResult = true;
         }
-        display.setText("0b" + Integer.toBinaryString(result));
-        storedInput = "";
-        operation = "";
-        userInput = Integer.toBinaryString(result);
-        isResult = true;
     }
 
     private void updateDisplay(String input){

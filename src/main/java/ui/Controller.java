@@ -19,21 +19,21 @@ public class Controller {
     @FXML
     Label display;
 
-
-    BinaryOperations BinOp;
-
     private ArrayList<Integer> inputs = new ArrayList<>();
     private String userInput = "";
     private String operation = "";
     private String storedInput = "";
+    private boolean isResult = false;
 
     @FXML
     private void handle1Button() {
-        updateDisplay("1");
+        if (isResult == false)
+            updateDisplay("1");
     }
     @FXML
     private void handle0Button() {
-        updateDisplay("0");
+        if (isResult == false)
+            updateDisplay("0");
     }
     @FXML
     private void handleClearButton() {
@@ -44,13 +44,48 @@ public class Controller {
     }
     @FXML
     private void handleAddButton() {
-        updateOperation("+");
+        if (userInput != "" && storedInput == "") {
+            updateOperation("+");
+        } else if (userInput == "" && storedInput != "" && operation != ""){
+            operation = "+";
+            display.setText(storedInput + " " + operation);
+        }
+    }
+    @FXML
+    private void handleDivButton() {
+        if (userInput != "" && storedInput == "") {
+            updateOperation("/");
+        } else if (userInput == "" && storedInput != "" && operation != ""){
+            operation = "/";
+            display.setText(storedInput + " " + operation);
+        }
+    }
+    @FXML
+    private void handleSqrButton() {
+        updateOperation("√");
     }
 
     @FXML
-    private void handleToggle() {
+    private void handleEqual() {
+        int one = Integer.parseInt(storedInput, 2);
+        int two = Integer.parseInt(userInput, 2);
+        System.out.println(one);
+        System.out.println(two);
+        int result = 0;
+        switch (operation) {
+            case "+":
+                result = BinaryOperations.Add(one, two);
+                break;
+            case "/":
+                result = BinaryOperations.Divide(one, two);
+                break;
+        }
+        display.setText("0b" + Integer.toBinaryString(result));
+        storedInput = "";
+        operation = "";
+        userInput = Integer.toBinaryString(result);
+        isResult = true;
     }
-
 
     private void updateDisplay(String input){
          userInput = userInput + input;
@@ -58,9 +93,11 @@ public class Controller {
     }
 
     private void updateOperation(String newOperation) {
+        isResult = false;
         storedInput = userInput;
         userInput = "";
         operation = newOperation;
+        display.setText(storedInput + " " + operation);
 
     }
 

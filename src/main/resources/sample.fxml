@@ -27,7 +27,7 @@
             <Font size="30.0" />
          </font>
       </Label>
-      <Button fx:id="Btoggle" layoutX="150.0" layoutY="155.0" mnemonicParsing="false" onAction="#handleToggle" text="Toggle Binary/Decimal" />
+      <Button fx:id="Btoggle" layoutX="150.0" layoutY="155.0" mnemonicParsing="false" text="Toggle Binary/Decimal" />
       <Button fx:id="Badd" layoutX="108.0" layoutY="309.0" mnemonicParsing="false" onAction="#handleAddButton" text="+">
          <font>
             <Font size="20.0" />
@@ -43,12 +43,12 @@
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="Bdiv" layoutX="108.0" layoutY="378.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="42.0" text="/">
+      <Button fx:id="Bdiv" layoutX="108.0" layoutY="378.0" mnemonicParsing="false" onAction="#handleDivButton" prefHeight="44.0" prefWidth="42.0" text="/">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="Bsqr" layoutX="197.0" layoutY="378.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="42.0" text="√">
+      <Button fx:id="Bsqr" layoutX="197.0" layoutY="378.0" mnemonicParsing="false" onAction="#handleSqrButton" prefHeight="44.0" prefWidth="42.0" text="√">
          <font>
             <Font size="20.0" />
          </font>
@@ -58,7 +58,7 @@
             <Font size="18.0" />
          </font>
       </Button>
-      <Button fx:id="Bequ" layoutX="101.0" layoutY="447.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="234.0" text="=">
+      <Button fx:id="Bequ" layoutX="101.0" layoutY="447.0" mnemonicParsing="false" onAction="#handleEqual" prefHeight="54.0" prefWidth="234.0" text="=">
          <font>
             <Font size="25.0" />
          </font>

@@ -1,5 +1,6 @@
 package ui;
 
+import backend.BinaryOperations;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -18,9 +19,13 @@ public class Controller {
     @FXML
     Label display;
 
+
+    BinaryOperations BinOp;
+
     private ArrayList<Integer> inputs = new ArrayList<>();
     private String userInput = "";
-
+    private String operation = "";
+    private String storedInput = "";
 
     @FXML
     private void handle1Button() {
@@ -33,7 +38,13 @@ public class Controller {
     @FXML
     private void handleClearButton() {
         userInput = "";
+        storedInput = "";
+        operation = "";
         updateDisplay("");
+    }
+    @FXML
+    private void handleAddButton() {
+        updateOperation("+");
     }
 
     @FXML
@@ -43,7 +54,14 @@ public class Controller {
 
     private void updateDisplay(String input){
          userInput = userInput + input;
-         display.setText(userInput);
+         display.setText(storedInput + " " + operation + " " + userInput);
+    }
+
+    private void updateOperation(String newOperation) {
+        storedInput = userInput;
+        userInput = "";
+        operation = newOperation;
+
     }
 
 }

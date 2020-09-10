@@ -43,6 +43,7 @@ public class Controller {
         userInput = "";
         storedInput = "";
         operation = "";
+        isResult = false;
         updateDisplay("");
     }
     @FXML

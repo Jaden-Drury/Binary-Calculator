@@ -12,60 +12,60 @@
             <Font name="System Bold" size="30.0" />
          </font>
       </Label>
-      <Button fx:id="B1" layoutX="91.0" layoutY="102.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="59.0" text="1">
+      <Button fx:id="B1" layoutX="108.0" layoutY="207.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="59.0" text="1">
          <font>
             <Font size="35.0" />
          </font>
       </Button>
-      <Button fx:id="B0" layoutX="262.0" layoutY="102.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="59.0" text="0">
+      <Button fx:id="B0" layoutX="185.0" layoutY="207.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="59.0" text="0">
          <font>
             <Font size="35.0" />
          </font>
       </Button>
-      <Label layoutX="99.0" layoutY="482.0" prefHeight="30.0" prefWidth="67.0" text="Result:">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-      <Label fx:id="Bresult" layoutX="175.0" layoutY="471.0" prefHeight="52.0" prefWidth="242.0" text="0" textAlignment="CENTER">
+      <Label fx:id="Bresult" alignment="CENTER_RIGHT" layoutX="98.0" layoutY="83.0" prefHeight="52.0" prefWidth="242.0" text="0" textAlignment="CENTER">
          <font>
             <Font size="30.0" />
          </font>
       </Label>
-      <Button fx:id="Btoggle" layoutX="99.0" layoutY="446.0" mnemonicParsing="false" text="Toggle Binary/Decimal" />
-      <Button fx:id="Badd" layoutX="99.0" layoutY="222.0" mnemonicParsing="false" text="+">
+      <Button fx:id="Btoggle" layoutX="150.0" layoutY="155.0" mnemonicParsing="false" text="Toggle Binary/Decimal" />
+      <Button fx:id="Badd" layoutX="108.0" layoutY="309.0" mnemonicParsing="false" text="+">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="Bsub" layoutX="190.0" layoutY="222.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="42.0" text="-">
+      <Button fx:id="Bsub" layoutX="197.0" layoutY="309.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="42.0" text="-">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="Bmult" layoutX="287.0" layoutY="222.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="42.0" text="*">
+      <Button fx:id="Bmult" layoutX="288.0" layoutY="309.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="42.0" text="*">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="Bdiv" layoutX="99.0" layoutY="287.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="42.0" text="/">
+      <Button fx:id="Bdiv" layoutX="108.0" layoutY="378.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="42.0" text="/">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="Bsqr" layoutX="190.0" layoutY="287.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="42.0" text="√">
+      <Button fx:id="Bsqr" layoutX="197.0" layoutY="378.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="42.0" text="√">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="Bsq" layoutX="284.0" layoutY="287.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="49.0" text="x²">
+      <Button fx:id="Bsq" layoutX="288.0" layoutY="378.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="42.0" text="x²">
          <font>
-            <Font size="20.0" />
+            <Font size="18.0" />
          </font>
       </Button>
-      <Button fx:id="Bequ" layoutX="99.0" layoutY="342.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="234.0" text="=">
+      <Button fx:id="Bequ" layoutX="101.0" layoutY="447.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="234.0" text="=">
          <font>
             <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="B01" layoutX="263.0" layoutY="207.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="59.0" text="C">
+         <font>
+            <Font size="35.0" />
          </font>
       </Button>
    </children>

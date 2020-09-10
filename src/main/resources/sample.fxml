@@ -22,9 +22,9 @@
             <Font size="35.0" />
          </font>
       </Button>
-      <Label fx:id="display" alignment="CENTER_RIGHT" layoutX="35.0" layoutY="77.0" prefHeight="52.0" prefWidth="340.0" text="0" textAlignment="CENTER">
+      <Label fx:id="display" alignment="CENTER_RIGHT" layoutX="48.0" layoutY="78.0" prefHeight="52.0" prefWidth="340.0" style="-fx-background-color: #d4d4d4;" text="0" textAlignment="CENTER">
          <font>
-            <Font size="30.0" />
+            <Font size="24.0" />
          </font>
       </Label>
       <Button fx:id="Btoggle" layoutX="150.0" layoutY="155.0" mnemonicParsing="false" text="Toggle Binary/Decimal" />
@@ -33,12 +33,12 @@
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="Bsub" layoutX="197.0" layoutY="309.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="42.0" text="-">
+      <Button fx:id="Bsub" layoutX="197.0" layoutY="309.0" mnemonicParsing="false" onAction="#handleSubButton" prefHeight="44.0" prefWidth="42.0" text="-">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="Bmult" layoutX="288.0" layoutY="309.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="42.0" text="*">
+      <Button fx:id="Bmult" layoutX="288.0" layoutY="309.0" mnemonicParsing="false" onAction="#handleMultiButton" prefHeight="44.0" prefWidth="42.0" text="*">
          <font>
             <Font size="20.0" />
          </font>
@@ -53,7 +53,7 @@
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="Bsq" layoutX="288.0" layoutY="378.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="42.0" text="x²">
+      <Button fx:id="Bsq" layoutX="288.0" layoutY="378.0" mnemonicParsing="false" onAction="#handlePowButton" prefHeight="44.0" prefWidth="42.0" text="x²">
          <font>
             <Font size="18.0" />
          </font>

@@ -60,12 +60,44 @@ public class Controller {
             display.setText(storedInput + " " + operation);
         }
     }
+
+    @FXML
+    private void handleSubButton(){
+        if (userInput != "" && storedInput == "") {
+            updateOperation("-");
+        } else if (userInput == "" && storedInput != "" && operation != ""){
+            operation = "-";
+            display.setText(storedInput + " " + operation);
+        }
+    }
+
+    @FXML
+    private void handleMultiButton(){
+        if (userInput != "" && storedInput == "") {
+            updateOperation("*");
+        } else if (userInput == "" && storedInput != "" && operation != ""){
+            operation = "*";
+            display.setText(storedInput + " " + operation);
+        }
+    }
+
     @FXML
     private void handleSqrButton() {
         /*if (userInput != "" && storedInput == "" && operation == "");
         int num = Integer.parseInt(userInput, 2);
         int result = 0;
         BinaryOperations.sqrt(num);
+        display.setText("0b" + Integer.toBinaryString(result));
+        userInput = Integer.toBinaryString(result);
+        isResult = true;*/
+    }
+
+    @FXML
+    private void handlePowButton() {
+        /*if (userInput != "" && storedInput == "" && operation == "");
+        int num = Integer.parseInt(userInput, 2);
+        int result = 0;
+        BinaryOperations.pow(num);
         display.setText("0b" + Integer.toBinaryString(result));
         userInput = Integer.toBinaryString(result);
         isResult = true;*/
@@ -84,6 +116,12 @@ public class Controller {
                 break;
             case "/":
                 result = BinaryOperations.Divide(one, two);
+                break;
+            case "-":
+                result = BinaryOperations.Subtract(one, two);
+                break;
+            case "*":
+                result = BinaryOperations.Multiply(one, two);
                 break;
         }
         display.setText("0b" + Integer.toBinaryString(result));

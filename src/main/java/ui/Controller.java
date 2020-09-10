@@ -2,28 +2,31 @@ package ui;
 
 import backend.BinaryOperations;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
-import javafx.stage.Stage;
-
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Objects;
-
-import static javafx.application.Platform.exit;
 
 public class Controller {
     @FXML
     Label display;
 
-    private ArrayList<Integer> inputs = new ArrayList<>();
     private String userInput = "";
     private String operation = "";
     private String storedInput = "";
     private boolean isResult = false;
+    private boolean isBinary = true;
+
+    @FXML
+    private void handleToggleButton() {
+       /* if (isResult == true){
+            if(isBinary == true){
+                display.setText(BinaryOperations.toDecimal(Integer.parseInt(userInput, 2)));
+                isBinary = false;
+            }else{
+                display.setText(userInput);
+                isBinary = true;
+            }
+        } */
+
+    }
 
     @FXML
     private void handle1Button() {
@@ -107,8 +110,6 @@ public class Controller {
     private void handleEqual() {
         int one = Integer.parseInt(storedInput, 2);
         int two = Integer.parseInt(userInput, 2);
-        System.out.println(one);
-        System.out.println(two);
         int result = 0;
         switch (operation) {
             case "+":

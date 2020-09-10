@@ -27,7 +27,7 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <Button fx:id="Btoggle" layoutX="150.0" layoutY="155.0" mnemonicParsing="false" text="Toggle Binary/Decimal" />
+      <Button fx:id="Btoggle" layoutX="150.0" layoutY="155.0" mnemonicParsing="false" onAction="#handleToggleButton" text="Toggle Binary/Decimal" />
       <Button fx:id="Badd" layoutX="108.0" layoutY="309.0" mnemonicParsing="false" onAction="#handleAddButton" text="+">
          <font>
             <Font size="20.0" />

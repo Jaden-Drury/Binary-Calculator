@@ -62,7 +62,13 @@ public class Controller {
     }
     @FXML
     private void handleSqrButton() {
-        updateOperation("√");
+        /*if (userInput != "" && storedInput == "" && operation == "");
+        int num = Integer.parseInt(userInput, 2);
+        int result = 0;
+        BinaryOperations.sqrt(num);
+        display.setText("0b" + Integer.toBinaryString(result));
+        userInput = Integer.toBinaryString(result);
+        isResult = true;*/
     }
 
     @FXML

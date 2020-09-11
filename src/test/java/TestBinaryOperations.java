@@ -97,15 +97,15 @@ public class TestBinaryOperations {
     @Test
     public void TestSqrt(){
         int x = 4;
-        String result = BinaryOperations.sqrt(x);
-        assert (Double.parseDouble(result) == 2.0);
+        int result = BinaryOperations.sqrt(x);
+        assert (result == 2);
     }
 
     @Test
     public void TestPow(){
         int x = 4;
-        String result = BinaryOperations.pow(x);
-        assert (Double.parseDouble(result) == 16.0);
+        int result = BinaryOperations.pow(x);
+        assert (result == 16);
     }
 
 

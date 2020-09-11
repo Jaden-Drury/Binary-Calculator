@@ -1,6 +1,6 @@
 public class BinaryOperations {
 
-    private static String result;
+    private static int result;
     /// Returns the value obtained from (A * B)
     public static int Multiply(int A, int B) {
         int a = A, b = B, result=0;
@@ -54,13 +54,13 @@ public class BinaryOperations {
         return difference;
     }
 
-    public static String sqrt(int firstNumber){
-        result = String.valueOf(Math.sqrt(BinaryToDecimal(firstNumber)));
+    public static int sqrt(int firstNumber){
+        result =  (int)Math.floor(Math.sqrt(BinaryToDecimal(firstNumber)));
         return result;
     }
 
-    public static String pow(int firstNumber){
-        result = String.valueOf(Math.pow(BinaryToDecimal(firstNumber),2));
+    public static int pow(int firstNumber){
+        result = (int)Math.floor(Math.pow(BinaryToDecimal(firstNumber),2));
         return result;
     }
     /// Returns the decimal representation of the passed in number

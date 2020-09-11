@@ -2,6 +2,7 @@ package ui;
 
 import backend.BinaryOperations;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 
 public class Controller {
@@ -16,15 +17,20 @@ public class Controller {
 
     @FXML
     private void handleToggleButton() {
-       /* if (isResult == true){
-            if(isBinary == true){
-                display.setText(BinaryOperations.toDecimal(Integer.parseInt(userInput, 2)));
-                isBinary = false;
-            }else{
-                display.setText(userInput);
-                isBinary = true;
+        try {
+            if (isResult == true) {
+                if (isBinary == true) {
+                    System.out.println(userInput);
+                    display.setText(Integer.toString(BinaryOperations.BinaryToDecimal(Long.parseLong(userInput))));
+                    isBinary = false;
+                } else {
+                    display.setText(userInput);
+                    isBinary = true;
+                }
             }
-        } */
+        }catch (Exception e){
+            infoBox("Number to big", "Error", null);
+        }
 
     }
 
@@ -87,51 +93,65 @@ public class Controller {
 
     @FXML
     private void handleSqrButton() {
-        /*if (userInput != "" && storedInput == "" && operation == "");
-        int num = Integer.parseInt(userInput, 2);
-        int result = 0;
-        BinaryOperations.sqrt(num);
-        display.setText("0b" + Integer.toBinaryString(result));
-        userInput = Integer.toBinaryString(result);
-        isResult = true;*/
+        try {
+            if (userInput != "" && storedInput == "" && operation == "") {
+                int num = Integer.parseInt(userInput, 2);
+                int result = 0;
+                result = BinaryOperations.sqrt(num);
+                display.setText(Integer.toBinaryString(result));
+                userInput = Integer.toBinaryString(result);
+                isResult = true;
+            }
+        }catch (Exception e){
+            infoBox("Number to big", "Error", null);
+        }
     }
 
     @FXML
     private void handlePowButton() {
-        /*if (userInput != "" && storedInput == "" && operation == "");
-        int num = Integer.parseInt(userInput, 2);
-        int result = 0;
-        BinaryOperations.pow(num);
-        display.setText("0b" + Integer.toBinaryString(result));
-        userInput = Integer.toBinaryString(result);
-        isResult = true;*/
+        try {
+            if (userInput != "" && storedInput == "" && operation == "") {
+                int num = Integer.parseInt(userInput, 2);
+                int result = 0;
+                result = BinaryOperations.Multiply(num, num);
+                display.setText(Integer.toBinaryString(result));
+                userInput = Integer.toBinaryString(result);
+                isResult = true;
+            }
+        }catch (Exception e){
+            infoBox("Number to big", "Error", null);
+        }
     }
 
     @FXML
     private void handleEqual() {
-        if(userInput != "" && storedInput != "" && operation != ""){
-            int one = Integer.parseInt(storedInput, 2);
-            int two = Integer.parseInt(userInput, 2);
-            int result = 0;
-            switch (operation) {
-                case "+":
-                    result = BinaryOperations.Add(one, two);
-                    break;
-                case "/":
-                    result = BinaryOperations.Divide(one, two);
-                    break;
-                case "-":
-                    result = BinaryOperations.Subtract(one, two);
-                    break;
-                case "*":
-                    result = BinaryOperations.Multiply(one, two);
-                    break;
+        if(userInput != "" && storedInput != "" && operation != "") {
+            try {
+                int one = Integer.parseInt(storedInput, 2);
+                int two = Integer.parseInt(userInput, 2);
+                int result = 0;
+                switch (operation) {
+                    case "+":
+                        result = BinaryOperations.Add(one, two);
+                        break;
+                    case "/":
+                        result = BinaryOperations.Divide(one, two);
+                        break;
+                    case "-":
+                        result = BinaryOperations.Subtract(one, two);
+                        break;
+                    case "*":
+                        result = BinaryOperations.Multiply(one, two);
+                        break;
+                }
+                display.setText(Integer.toBinaryString(result));
+                storedInput = "";
+                operation = "";
+                userInput = Integer.toBinaryString(result);
+                isResult = true;
+            } catch (Exception e) {
+                infoBox("Number to big", "Error", null);
             }
-            display.setText(Integer.toBinaryString(result));
-            storedInput = "";
-            operation = "";
-            userInput = Integer.toBinaryString(result);
-            isResult = true;
         }
     }
 
@@ -147,6 +167,15 @@ public class Controller {
         operation = newOperation;
         display.setText(storedInput + " " + operation);
 
+    }
+
+    public static void infoBox(String infoMessage, String titleBar, String headerMessage)
+    {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle(titleBar);
+        alert.setHeaderText(headerMessage);
+        alert.setContentText(infoMessage);
+        alert.showAndWait();
     }
 
 }

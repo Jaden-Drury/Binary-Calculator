@@ -104,10 +104,24 @@ public class TestBinaryOperations {
     }
 
     @Test
+    public void TestSqrt2(){
+        int x = 25;
+        int result = BinaryOperations.sqrt(x);
+        assert (result == 5);
+    }
+
+    @Test
     public void TestPow(){
         int x = 4;
         int result = BinaryOperations.pow(x);
         assert (result == 16);
+    }
+
+    @Test
+    public void TestPow2(){
+        int x = 25;
+        int result = BinaryOperations.pow(x);
+        assert (result == 625);
     }
 
 

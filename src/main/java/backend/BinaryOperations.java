@@ -1,3 +1,4 @@
+package backend;
 public class BinaryOperations {
 
     private static int result;
@@ -55,7 +56,7 @@ public class BinaryOperations {
     }
 
     public static int sqrt(int firstNumber){
-        result =  (int)Math.floor(Math.sqrt(BinaryToDecimal(firstNumber)));
+        result =  (int)Math.floor(Math.sqrt(firstNumber));
         return result;
     }
 
@@ -64,7 +65,7 @@ public class BinaryOperations {
         return result;
     }
     /// Returns the decimal representation of the passed in number
-    public static Integer BinaryToDecimal(int  bi) {
+    public static Integer BinaryToDecimal(long  bi) {
         String binStr = bi+"";
         Integer sum = 0;
         int len = binStr.length();

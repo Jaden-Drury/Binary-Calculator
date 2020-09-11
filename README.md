@@ -86,3 +86,20 @@ Meeting 4:
     Got the display to function properly
 
 
+
+Meeting 5:
+
+  Attendance:
+    Jaden Drury
+    Chunxiang Yu
+    Collin Stiner
+    Casey Haskins
+    Chase Watkins
+
+  Time: 11 am September 11th
+
+  Discussion:
+  Reviewing work since last team meeting
+  Testing newly committed code and merging into master
+  Discussing final steps to be done before tonight
+  Confirming everyone has made commits 

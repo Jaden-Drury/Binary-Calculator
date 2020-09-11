@@ -1,18 +1,19 @@
 # Binary-Calculator
 2020 Group Binary Calculator Assignment
 
-First Meeting 9/7/2020 7 p.m.
-  Attendance (All Present):
+## First Meeting 9/7/2020 7 p.m.
+  
+  ### Attendance (All Present):
     Jaden Drury
     Chunxiang Yu
     Collin Stiner
     Casey Haskins
     Chase Watkins
 
-  Medium:
+  ### Medium:
     Zoom video call
 
-Discussion:
+### Discussion:
   Division of work
   General plan for the week
 
@@ -38,15 +39,15 @@ Discussion:
     
     
     
-Meeting 2:
+##Meeting 2:
   Chase Watkins
   Collin Stiner
 
-  Time: 5:00pm - 6:35pm September 8th
+ ### Time: 5:00pm - 6:35pm September 8th
 
-  Medium: Discord call (paired programming)
+  ###Medium: Discord call (paired programming)
 
-  Work done:
+  ###Work done:
     Configured pom.xml file to work with JavaFX
     Added buttons and labels to fxml file
     Created UI branch
@@ -54,11 +55,11 @@ Meeting 2:
 
 
 
-Meeting 3:
+##Meeting 3:
 
-  Medium: google meet
-  Time: 7 pm
-  Attendance:
+ ### Medium: google meet
+  ###Time: 7 pm
+ ### Attendance:
     Jaden Drury
     Chunxiang Yu
     Collin Stiner
@@ -72,13 +73,14 @@ Meeting 3:
 
 
 
-Meeting 4:
-  Chase Watkins
-  Collin Stiner
+## Meeting 4:
+  ### Attendance: 
+    Chase Watkins
+    Collin Stiner
 
-  Time: 2pm - 4:30pm September 10th
+  ### Time: 2pm - 4:30pm September 10th
 
-  Medium: Discord call (paired programming)
+ ### Medium: Discord call (paired programming)
 
   Work done:
     Added methods for operation buttons
@@ -87,19 +89,19 @@ Meeting 4:
 
 
 
-Meeting 5:
+## Meeting 5:
 
-  Attendance:
+  ### Attendance:
     Jaden Drury
     Chunxiang Yu
     Collin Stiner
     Casey Haskins
     Chase Watkins
 
-  Time: 11 am September 11th
+  ### Time: 11 am September 11th
 
-  Discussion:
-  Reviewing work since last team meeting
-  Testing newly committed code and merging into master
-  Discussing final steps to be done before tonight
-  Confirming everyone has made commits 
+  ### Discussion:
+    Reviewing work since last team meeting
+    Testing newly committed code and merging into master
+    Discussing final steps to be done before tonight
+    Confirming everyone has made commits 

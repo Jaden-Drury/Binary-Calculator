@@ -79,4 +79,36 @@ public class TestBinaryOperations {
             assert (expectedMessage == actualMessage);
         }
     }
+
+    @Test
+    public void TestBinaryToDecimal() {
+        int x = 10;
+        int result = BinaryOperations.BinaryToDecimal(x);
+        assert (result == 2);
+    }
+
+    @Test
+    public void TestDecimalToBinary() {
+        int x = 10;
+        String result = BinaryOperations.ToBinary(x);
+        assert (Integer.parseInt(result) == 1010);
+    }
+
+    @Test
+    public void TestSqrt(){
+        int x = 4;
+        int result = BinaryOperations.sqrt(x);
+        assert (result == 2);
+    }
+
+    @Test
+    public void TestPow(){
+        int x = 4;
+        int result = BinaryOperations.pow(x);
+        assert (result == 16);
+    }
+
+
+
+
 }

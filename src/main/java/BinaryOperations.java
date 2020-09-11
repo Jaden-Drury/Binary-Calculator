@@ -1,6 +1,6 @@
 public class BinaryOperations {
 
-
+    private static int result;
     /// Returns the value obtained from (A * B)
     public static int Multiply(int A, int B) {
         int a = A, b = B, result=0;
@@ -54,13 +54,49 @@ public class BinaryOperations {
         return difference;
     }
 
+    public static int sqrt(int firstNumber){
+        result =  (int)Math.floor(Math.sqrt(BinaryToDecimal(firstNumber)));
+        return result;
+    }
+
+    public static int pow(int firstNumber){
+        result = (int)Math.floor(Math.pow(BinaryToDecimal(firstNumber),2));
+        return result;
+    }
     /// Returns the decimal representation of the passed in number
-    public int ToDecimal(byte number) {
-        return 0;
+    public static Integer BinaryToDecimal(int  bi) {
+        String binStr = bi+"";
+        Integer sum = 0;
+        int len = binStr.length();
+        for (int i=1; i<=len; i++){
+            int number = Integer.parseInt(binStr.substring(i-1,i));
+            sum += (int)Math.pow(2,len-i)*number;
+        }
+        return  sum;
     }
 
     /// Returns the binary representation of the passed in number
-    public byte ToBinary(int number) {
-        return 0;
+    public static String ToBinary(int num) {
+        String binaryNum="";
+        int [] arr=new int[32];
+        int  v,j=0;
+        if(num==0) {
+            return binaryNum + "0";
+        }
+        for(int  i=31;i>=0;i--) {
+            v=num&1;
+            arr[i]=v;
+            num=num>>1;
+        }
+        one:for(int i=0;i<32;i++) {
+            if(arr[i]==0&&arr[i+1]!=0) {
+                j=i+1;
+                break one;
+            }
+        }
+        for(int i=j;i<32;i++ ) {
+            binaryNum=binaryNum+arr[i];
+        }
+        return binaryNum;
     }
 }

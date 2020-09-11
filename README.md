@@ -55,10 +55,10 @@
 
 
 
-##Meeting 3:
+## Meeting 3:
 
  ### Medium: google meet
-  ###Time: 7 pm
+  ### Time: 7 pm
  ### Attendance:
     Jaden Drury
     Chunxiang Yu

@@ -127,7 +127,7 @@ public class Controller {
                     result = BinaryOperations.Multiply(one, two);
                     break;
             }
-            display.setText("0b" + Integer.toBinaryString(result));
+            display.setText(Integer.toBinaryString(result));
             storedInput = "";
             operation = "";
             userInput = Integer.toBinaryString(result);

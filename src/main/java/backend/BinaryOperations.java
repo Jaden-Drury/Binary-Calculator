@@ -65,7 +65,7 @@ public class BinaryOperations {
         return result;
     }
     /// Returns the decimal representation of the passed in number
-    public static Integer BinaryToDecimal(long  bi) {
+    public static Integer BinaryToDecimal(int  bi) {
         String binStr = bi+"";
         Integer sum = 0;
         int len = binStr.length();

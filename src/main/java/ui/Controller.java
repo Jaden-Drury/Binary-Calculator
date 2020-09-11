@@ -20,8 +20,7 @@ public class Controller {
         try {
             if (isResult == true) {
                 if (isBinary == true) {
-                    System.out.println(userInput);
-                    display.setText(Integer.toString(BinaryOperations.BinaryToDecimal(Long.parseLong(userInput))));
+                    display.setText(Integer.toString(BinaryOperations.BinaryToDecimal((int) Long.parseLong(userInput))));
                     isBinary = false;
                 } else {
                     display.setText(userInput);
@@ -50,7 +49,7 @@ public class Controller {
         storedInput = "";
         operation = "";
         isResult = false;
-        updateDisplay("");
+        display.setText("");
     }
     @FXML
     private void handleAddButton() {
@@ -161,12 +160,13 @@ public class Controller {
     }
 
     private void updateOperation(String newOperation) {
-        isResult = false;
-        storedInput = userInput;
-        userInput = "";
-        operation = newOperation;
-        display.setText(storedInput + " " + operation);
-
+        if(userInput != ""){
+            isResult = false;
+            storedInput = userInput;
+            userInput = "";
+            operation = newOperation;
+            display.setText(storedInput + " " + operation);
+        }
     }
 
     public static void infoBox(String infoMessage, String titleBar, String headerMessage)

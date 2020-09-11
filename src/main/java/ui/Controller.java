@@ -20,7 +20,7 @@ public class Controller {
         try {
             if (isResult == true) {
                 if (isBinary == true) {
-                    display.setText(Integer.toString(BinaryOperations.BinaryToDecimal((int) Long.parseLong(userInput))));
+                    display.setText(Integer.toString(Integer.parseInt(userInput,2)));
                     isBinary = false;
                 } else {
                     display.setText(userInput);

@@ -9,7 +9,7 @@
    <children>
       <Label alignment="CENTER" layoutX="91.0" layoutY="14.0" prefHeight="45.0" prefWidth="253.0" text="Binary Calculator">
          <font>
-            <Font name="System Bold" size="30.0" />
+            <Font name="System Bold" size="20.0" />
          </font>
       </Label>
       <Button fx:id="B1" layoutX="108.0" layoutY="207.0" mnemonicParsing="false" onAction="#handle1Button" prefHeight="75.0" prefWidth="59.0" text="1">

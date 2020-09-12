@@ -1,6 +1,19 @@
 # Binary-Calculator
 2020 Group Binary Calculator Assignment
 
+## Task Distrbution
+      Chase & Collin  = Create the interface
+      Chase & Collin = Call the backend functions into the interface
+      Chase & Collin = Ensure that invalid input is handled
+      Casey = Multiplication function, with unit tests
+      Casey = Division function, with unit tests
+      Jaden = Addition function with unit tests
+      Jaden = Subtraction function, with unit tests
+      Jaden = ReadMe file updates and meeting note recorder
+      Chunxiang Yu = Square Root function, with unit tests
+      Chunxiang Yu = Squarefunction, with unit tests
+      Chunxiang Yu = Conversion between decimal and binary, with unit tests
+
 ## First Meeting 9/7/2020 7 p.m.
   
   ### Attendance (All Present):

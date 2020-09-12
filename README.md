@@ -9,22 +9,22 @@
 ## Project Overview
 
       Opening screen
-      ![Opening Screen](https://github.com/Jaden-Drury/Binary-Calculator/blob/master/project_screenshots/opening-screen.png)
+![Opening Screen](https://github.com/Jaden-Drury/Binary-Calculator/blob/master/project_screenshots/opening-screen.png)
 
       Inputting expression
-      ![Inputting Expression](https://github.com/Jaden-Drury/Binary-Calculator/blob/master/project_screenshots/addition-input.png)
+![Inputting Expression](https://github.com/Jaden-Drury/Binary-Calculator/blob/master/project_screenshots/addition-input.png)
 
       Expression Output
-      ![Addition Output](https://github.com/Jaden-Drury/Binary-Calculator/blob/master/project_screenshots/addition-output.png)
+![Addition Output](https://github.com/Jaden-Drury/Binary-Calculator/blob/master/project_screenshots/addition-output.png)
 
       Toggle output to decimal
-      ![Toggle Decimal](https://github.com/Jaden-Drury/Binary-Calculator/blob/master/project_screenshots/toggle-decimal.png)
+![Toggle Decimal](https://github.com/Jaden-Drury/Binary-Calculator/blob/master/project_screenshots/toggle-decimal.png)
 
       Clearing Calculator
-      ![Clear Calculator](https://github.com/Jaden-Drury/Binary-Calculator/blob/master/project_screenshots/clear.png)
+![Clear Calculator](https://github.com/Jaden-Drury/Binary-Calculator/blob/master/project_screenshots/clear.png)
       
       A Gif of the calculator being used
-      ![Useage Gif](https://github.com/Jaden-Drury/Binary-Calculator/blob/master/project_screenshots/demo1.gif)
+![Useage Gif](https://github.com/Jaden-Drury/Binary-Calculator/blob/master/project_screenshots/demo1.gif)
 
 
 

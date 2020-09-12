@@ -8,6 +8,8 @@
       
 ## Project Overview
 
+Press the '1' and '0' buttons to input your binary number, then press the desired operation and input the next binary number. Press equals to get the result, you may toggle this with the 'binary/decimal toggle' button to view it in decimal. The clear button will clear all inputs.
+
       Opening screen
 ![Opening Screen](https://github.com/Jaden-Drury/Binary-Calculator/blob/master/project_screenshots/opening-screen.png)
 
